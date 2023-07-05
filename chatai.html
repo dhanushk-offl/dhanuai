@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+}
+
+.chat-container {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+#chat-display {
+  height: 300px;
+  overflow-y: scroll;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+#user-input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#send-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#send-btn:hover {
+  background-color: #45a049;
+}
+
+.bot-message {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+
+.user-message {
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+
+.typing-animation {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  animation: typing 1s infinite;
+  margin-left: 5px;
+}
+
+@keyframes typing {
+  0% {
+    opacity: 0.3;
+  }
+  
+  50% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 0.3;
+  }
+}
+
+</style>
+<body>
+  <div class="chat-container">
+    <div id="chat-display"></div>
+    <div class="input-container">
+      <input type="text" id="user-input" placeholder="Type your message...">
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <script src="aiscript.js"></script>
+</body>
+</html>
